@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+  color: grey;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: blue;
+}
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+
+body {
+  background-image: url('https://www.techandall.com/wp-content/uploads/2013/10/techandall_wallpaper_1.jpg'); /* Path to the image in the public folder */
+  background-size: cover; /* This will make the image cover the entire screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Adding a translucent background for readability */
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;    /* Horizontally center */
+  align-items: center;        /* Vertically center */
+  height: 100vh;              /* Full viewport height */
+  text-align: center;         /* Center the text itself */
+}
+
+h1 {
+  font-size: 3rem;            /* You can adjust the font size */
+  color: #333;                /* Adjust the color as needed */
+}
+
+
